@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#0E4C6E">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="icons/favicon-64.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Gaviotín">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>El Vuelo del Gaviotín</title>
+<meta name="description" content="Juego educativo sobre la conservación del Gaviotín Chico en Mejillones.">
+<!-- Vista previa al compartir (WhatsApp, Facebook, X, Telegram) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Vibarachokit">
+<meta property="og:locale" content="es_CL">
+<meta property="og:url" content="https://vibarachokit-design.github.io/fermin/">
+<meta property="og:title" content="El Vuelo del Gaviotín 🕊️ Juego educativo">
+<meta property="og:description" content="Ayuda al Gaviotín Chico a llegar a Mejillones, alimentar a sus polluelos y proteger su nido. Gratis, en el navegador o instalado en Android.">
+<meta property="og:image" content="https://vibarachokit-design.github.io/fermin/og-image.jpg">
+<meta property="og:image:secure_url" content="https://vibarachokit-design.github.io/fermin/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Portada de El Vuelo del Gaviotín: gaviotines chicos sobre la costa de Mejillones">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="El Vuelo del Gaviotín 🕊️ Juego educativo">
+<meta name="twitter:description" content="Ayuda al Gaviotín Chico a llegar a Mejillones, alimentar a sus polluelos y proteger su nido.">
+<meta name="twitter:image" content="https://vibarachokit-design.github.io/fermin/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #0b2233; }
+  html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; touch-action: none; user-select: none; -webkit-user-select: none;
+           -webkit-tap-highlight-color: transparent; border-radius: 6px; box-shadow: 0 10px 40px rgba(0,0,0,.45); }
+  #rotate { display: none; position: fixed; inset: auto 16px 24px 16px; padding: 14px 18px; border-radius: 18px;
+            background: #F28C6B; color: #fff; font: 700 18px "Baloo 2", "Trebuchet MS", sans-serif; text-align: center;
+            box-shadow: 0 6px 20px rgba(0,0,0,.35); }
+  @media (orientation: portrait) and (pointer: coarse) { #rotate { display: block; } }
+</style>
+</head>
+<body>
+<canvas id="game" aria-label="Juego El Vuelo del Gaviotín"></canvas>
+<div id="rotate">📱↻ Gira tu celular para jugar en pantalla completa</div>
+<noscript>Este juego necesita JavaScript activado.</noscript>
+<script src="game.js?v=5b18eb24a486"></script>
+<script src="chapters.js?v=5b18eb24a486"></script>
+<script>
+  if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+    addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => { /* sin modo offline */ }));
+  }
+</script>
+</body>
+</html>
