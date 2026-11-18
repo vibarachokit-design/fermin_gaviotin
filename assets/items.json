@@ -1,0 +1,94 @@
+{
+ "tool_sign": [
+  365,
+  420
+ ],
+ "tool_fence": [
+  420,
+  220
+ ],
+ "tool_cone": [
+  305,
+  416
+ ],
+ "tool_lamp": [
+  216,
+  420
+ ],
+ "tool_detour": [
+  401,
+  420
+ ],
+ "tool_hat": [
+  420,
+  312
+ ],
+ "trash_bottle": [
+  420,
+  412
+ ],
+ "trash_bag": [
+  370,
+  420
+ ],
+ "trash_line": [
+  389,
+  420
+ ],
+ "trash_rings": [
+  420,
+  290
+ ],
+ "trash_cap": [
+  326,
+  258
+ ],
+ "sea_pelican": [
+  420,
+  343
+ ],
+ "sea_pelican_dive": [
+  420,
+  175
+ ],
+ "sea_lion": [
+  400,
+  293
+ ],
+ "sea_boat": [
+  420,
+  302
+ ],
+ "sea_net": [
+  420,
+  223
+ ],
+ "nest_eggs": [
+  420,
+  236
+ ],
+ "chick_sit": [
+  397,
+  400
+ ],
+ "chick_beg": [
+  369,
+  420
+ ],
+ "chick_eat": [
+  420,
+  345
+ ],
+ "chick_sleep": [
+  420,
+  296
+ ],
+ "pair_nest": [
+  520,
+  309
+ ],
+ "fact_card": [
+  440,
+  660
+ ]
+}
